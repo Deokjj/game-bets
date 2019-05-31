@@ -1,6 +1,7 @@
 export default {
   text: '#33335c',
   SecondaryText: '#81839f',
+  dataText: '#66698A',
   primary: '#f0f2fc',
   darkerPrimary: '#d3d6ec',
   lighterPrimary: '#FBFCFF',

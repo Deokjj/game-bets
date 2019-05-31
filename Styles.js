@@ -8,19 +8,19 @@ export const styles = StyleSheet.create({
     backgroundColor: Colors.primary,
   },
   header: {
-    flexBasis: 80,
+    flexBasis: 70,
     alignItems: 'center',
     justifyContent: 'center',
     ...ifIphoneX({
       paddingTop: 30,
-      flexBasis: 110
+      flexBasis: 100
     })
   },
   content: {
     flex: 1
   },
   headerTextStyle: {
-    fontSize: 32,
+    fontSize: 28,
     color: Colors.text,
     letterSpacing: 2
   },
@@ -36,7 +36,7 @@ export const styles = StyleSheet.create({
     borderTopColor: Colors.dividerColor,
   },
   timeStamp:{
-    fontSize: 20,
+    fontSize: 18,
     color: Colors.text
   },
   contentCardData: {
@@ -44,19 +44,20 @@ export const styles = StyleSheet.create({
     justifyContent: 'space-around',
   },
   contentCardDataHeader: {
-    marginTop:8,
-    marginBottom:8,
+    marginTop:28,
+    marginBottom:4,
   },
   contentDataHeaderText:{
     color: Colors.SecondaryText,
     textAlign: 'center',
+    fontSize: 10
   },
   contentCardDataWrapper: {
     backgroundColor: Colors.lighterPrimary,
     padding: 8
   },
   teamDisplay: {
-    flexBasis: 50,
+    flexBasis: 45,
     paddingTop: 6,
     paddingBottom: 6,
     paddingRight: 6
@@ -70,10 +71,16 @@ export const styles = StyleSheet.create({
     width: 36,
     height: 36
   },
+  teamText: {
+    color: Colors.text
+  },
   ratingView: {
     height: 32,
     justifyContent: 'center',
     alignItems: 'center'
+  },
+  ratingWrapper: {
+    flexDirection:'row',
   },
   ratingImage: {
     width: 14,
@@ -86,12 +93,26 @@ export const styles = StyleSheet.create({
     backgroundColor: Colors.primary,
     padding: 6
   },
+  teamDataWrapperMiddle: {
+    marginLeft: 8,
+    marginRight: 8
+  },
   teamDataText: {
     backgroundColor: Colors.darkerPrimary,
     marginBottom: 4,
     paddingTop: 18,
     paddingBottom: 18,
-
-    textAlign: 'center'
+    textAlign: 'center',
+    color: Colors.dataText
+  },
+  teamDataTextWithRating: {
+    color: 'white',
+  },
+  greenHighlighter: {
+    backgroundColor: Colors.greenHighlighter
+  },
+  buttonView: {
+    paddingTop: 8,
+    paddingBottom: 20,
   }
 });
